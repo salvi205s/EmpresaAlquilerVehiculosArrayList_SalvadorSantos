@@ -21,5 +21,12 @@ public class MisVehiculos {
         //Se llenarán los arraylist de clientes y vehículos de forma aleatoria usando los métodos pertinentes. 
         easydrive.rellenarArrayClientes();
         easydrive.rellenarArrayCoches();
+        //-------------------------------------------------------------------------------------------------
+
+       // Una vez cargados los 25 clientes y 25 vehículos aleatorios, se mostrarán usando la consola.
+        easydrive.imprimirClientes();
+        easydrive.imprimirVehiculos();
+        //-------------------------------------------------------------------------------------------------
+
     }
 }
