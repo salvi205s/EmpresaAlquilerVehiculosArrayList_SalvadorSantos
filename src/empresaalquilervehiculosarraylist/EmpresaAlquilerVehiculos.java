@@ -57,14 +57,14 @@ public class EmpresaAlquilerVehiculos {
     public void burbujaClientes() {
         Cliente auxi;
 
-        for (int i = 0; i < clientes.length - 1; i++) {
-            for (int j = i + 1; j < clientes.length; j++) {
+        for (int i = 0; i < clientes.size() - 1; i++) {
+            for (int j = i + 1; j < clientes.size(); j++) {
 
-                int aux = clientes[i].getNif().compareTo(clientes[j].getNif());
+                int aux = this.clientes.get(i).getNif().compareTo(clientes.get(j).getNif());
                 if (aux > 0) {
-                    auxi = clientes[i];
-                    clientes[i] = clientes[j];
-                    clientes[j] = auxi;
+                    auxi = clientes.get(i);
+                    clientes.set(i, clientes.get(j));
+                    clientes.set(j, auxi);
                 }
             }
         }
@@ -79,14 +79,14 @@ public class EmpresaAlquilerVehiculos {
     public void burbujaVehiculos() {
         Vehiculo auxi;
 
-        for (int i = 0; i < vehiculos.length - 1; i++) {
-            for (int j = i + 1; j < vehiculos.length; j++) {
+        for (int i = 0; i < vehiculos.size() - 1; i++) {
+            for (int j = i + 1; j < vehiculos.size(); j++) {
 
-                int aux = vehiculos[i].getMatricula().compareTo(vehiculos[j].getMatricula());
+                int aux = vehiculos.get(i).getMatricula().compareTo(vehiculos.get(j).getMatricula());
                 if (aux > 0) {
-                    auxi = vehiculos[i];
-                    vehiculos[i] = vehiculos[j];
-                    vehiculos[j] = auxi;
+                    auxi = vehiculos.get(i);
+                    vehiculos.set(i, vehiculos.get(j));
+                    vehiculos.set(j, auxi);
                 }
             }
         }
