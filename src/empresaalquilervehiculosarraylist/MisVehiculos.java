@@ -15,6 +15,8 @@ import java.util.Scanner;
 public class MisVehiculos {
     
     public static void main(String[] args) {
+        //Crear una empresa de alquiler con los datos que tú quieras.
+
         EmpresaAlquilerVehiculos easydrive = new EmpresaAlquilerVehiculos("A-28-187189", "easy drive", "www.easydrive.com");
         Scanner entrada=new Scanner(System.in);
 //        
@@ -36,56 +38,56 @@ public class MisVehiculos {
 //        
 //        
         // imprime la relación de clientes de easydrive
-        easydrive.imprimirClientes();
-
-        System.out.println("----------------------------------------------------------------------");
-
-        // imprime el catálogo de vehículos de easydrive
-        easydrive.imprimirVehiculos();
-        
-        System.out.println("----------------------------------------------------------------------");
-//        System.out.println("Aleatorios "+Cliente.clienteAleatorio());
-//        System.out.println("Aleatorios "+Vehiculo.cocheAleatorio());
-        
-        easydrive.rellenarArrayCoches();
-
-        easydrive.burbujaVehiculos();
-
-        easydrive.imprimirVehiculos();
-        
-        //---------------------------------------------------
-
-        easydrive.rellenarArrayClientes();
-
-        easydrive.burbujaClientes();
-
-        easydrive.imprimirClientes();
-
-        //------------------------------------------------------------
-//        System.out.println("Introduce matricula");
-//        String matricula=entrada.nextLine();
-//        
-//        easydrive.busquedaBinariaMatricula(matricula);
+//        easydrive.imprimirClientes();
 //
-//            if (easydrive.busquedaBinariaMatricula(matricula)==-1) {
+//        System.out.println("----------------------------------------------------------------------");
+//
+//        // imprime el catálogo de vehículos de easydrive
+//        easydrive.imprimirVehiculos();
+//        
+//        System.out.println("----------------------------------------------------------------------");
+////        System.out.println("Aleatorios "+Cliente.clienteAleatorio());
+////        System.out.println("Aleatorios "+Vehiculo.cocheAleatorio());
+//        
+//        easydrive.rellenarArrayCoches();
+//
+//        easydrive.ordenarCatalogoVehiculos();
+//
+//        easydrive.imprimirVehiculos();
+//        
+//        //---------------------------------------------------
+//
+//        easydrive.rellenarArrayClientes();
+//
+//        easydrive.ordenarCarteraClientes();
+//
+//        easydrive.imprimirClientes();
+//
+//        //------------------------------------------------------------
+////        System.out.println("Introduce matricula");
+////        String matricula=entrada.nextLine();
+////        
+////        easydrive.busquedaBinariaMatricula(matricula);
+////
+////            if (easydrive.busquedaBinariaMatricula(matricula)==-1) {
+////                System.out.println("No se ha encontrado");
+////        }else{
+////                System.out.println("La matricula buscada esta en la posicion : "+easydrive.busquedaBinariaMatricula(matricula));
+////            }
+//            
+//        //-------------------------------------------------------------------------
+//        //DNI
+//            
+//        System.out.println("Introduce DNI");
+//        
+//        String nif=entrada.nextLine();
+//        
+//        easydrive.busquedaBinariaNif(nif);
+//
+//            if (easydrive.busquedaBinariaNif(nif)==-1) {
 //                System.out.println("No se ha encontrado");
 //        }else{
-//                System.out.println("La matricula buscada esta en la posicion : "+easydrive.busquedaBinariaMatricula(matricula));
-//            }
-            
-        //-------------------------------------------------------------------------
-        //DNI
-            
-        System.out.println("Introduce DNI");
-        
-        String nif=entrada.nextLine();
-        
-        easydrive.busquedaBinariaNif(nif);
-
-            if (easydrive.busquedaBinariaNif(nif)==-1) {
-                System.out.println("No se ha encontrado");
-        }else{
-                System.out.println("El DNI buscado esta en la posicion : "+easydrive.busquedaBinariaNif(nif));
-            }    
+//                System.out.println("El DNI buscado esta en la posicion : "+easydrive.busquedaBinariaNif(nif));
+//            }    
     }
 }
