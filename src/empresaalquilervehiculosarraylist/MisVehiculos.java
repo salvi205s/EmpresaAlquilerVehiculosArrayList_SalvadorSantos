@@ -52,6 +52,28 @@ public class MisVehiculos {
         easydrive.imprimirClientes();
         easydrive.imprimirVehiculos();
 //------------------------------------------------------------------------------------------------------------------
+//Se volverá a buscar otro cliente y otro vehículo, solicitando los datos al usuario, usando búsqueda binaria. 
+//Todos los resultados se deben mostrar por consola, comprobando que el comportamiento de los métodos es el correcto.
+        System.out.println("Introduce DNI");
 
+        String nif = entrada.nextLine();
+        easydrive.busquedaBinariaNif(nif);
+
+        if (easydrive.busquedaBinariaNif(nif) == -1) {
+            System.out.println("No se ha encontrado");
+        } else {
+            System.out.println("El DNI buscado esta en la posicion : " + easydrive.busquedaBinariaNif(nif));
+        }
+        
+        System.out.println("Introduce matricula");
+        String matricula = entrada.nextLine();
+
+        easydrive.busquedaBinariaMatricula(matricula);
+
+        if (easydrive.busquedaBinariaMatricula(matricula) == -1) {
+            System.out.println("No se ha encontrado");
+        } else {
+            System.out.println("La matricula buscada esta en la posicion : " + easydrive.busquedaBinariaMatricula(matricula));
+        }
     }
 }
